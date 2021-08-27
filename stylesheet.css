@@ -1,0 +1,734 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+*::selection{
+color: white;
+background:  #fffb00;
+}
+html::-webkit-scrollbar{
+    width: 1.5rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: rgb(36, 35, 35);
+}
+html::-webkit-scrollbar-thumb{
+    background: linear-gradient(#f1c40f, #f39c12);
+}
+ .nav-bar{
+    width: 100%;
+    background: linear-gradient(to right, #ffffff, #f9fc66);
+    position: fixed;
+   z-index: 1000;
+}
+.navbar .color{
+    color: rgb(155, 44, 0);
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0; 
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: rgb(128, 49, 49);
+    font-weight: bold;
+    transition: all 0.5sec;
+}
+.navbar .navbar-nav .active, .navbar .navbar-nav .nav-item:hover{
+    background: #ffd900;
+    border-radius: 5px;
+}
+
+/* home start */
+.home{
+    background-image: url('./img/pexels-kaboompics-com-5836.jpg');
+    height: 80vh;
+}
+/* home end */
+
+.home{
+    background-image: url('./img/pexels-kaboompics-com-5836.jpg');
+height: 80vh;
+background-position: top right;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.home .con-h1 h1{
+    
+    color: white;
+    font-size: 4.5rem;
+    position: relative;
+    top: 135px;
+    left: -8px;
+    font-weight: bold;
+}
+.home .con-h4 h4{
+    position: relative;
+    top: 140px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    background-color: black;
+    display: inline;
+    padding: 5px 25px;
+}
+
+
+/* who sectio start */
+.who{
+    padding-top: 50px;
+}
+.who h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+.who .con{
+    width: 50%;
+    text-align: justify;
+    float: left;
+    margin-top: 100px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.who .con-img{
+    width: 50%;
+    float: right;
+    margin-right: -105px;
+    margin-top: 55px;
+}
+.who .con-img img{
+    width: 450px;
+}
+/* who sectio end */
+
+
+/* service start */
+.service{
+    background: aliceblue;
+    float: left;
+    clear: both;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.service h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    padding-top: 50px;
+}
+.service .box{
+    clear: both;
+    position: relative;
+    top: 30px;
+    font-weight: bold;
+}
+.service .box .image{
+    width: 30%;
+    float: left;
+    margin-top: 35px;
+}
+
+.service .box .image img{
+    display: block;
+    width: 300px;
+}
+.service .box .con-service{
+    width: 50%;
+    float: right;
+}
+
+.service .box .con-service p{
+    text-align: justify;
+    line-height: 28px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    font-size: 15px;
+}
+.service .box-1{
+    position: relative;
+    top: 25px;
+    transition: all 0.3s;
+}
+.service .box-1 .image-1{
+    width: 45%;
+    float: right;
+    clear: both;
+}
+
+.service .box-1 .image-1 img{
+    width: 300px;
+    display: block;
+}
+.service .box-1 .con-service-1{
+    width: 50%;
+    float: left;
+}
+
+.service .box-1 .con-service-1 p{
+    text-align: justify;
+    line-height: 27px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    font-size: 15px;
+}
+/* service end */
+
+/* contac us start */
+.contact-img{
+    width: 40%;
+    float: right;
+}
+.contact-img img{
+    width: 550px;
+    margin-left: -140px;
+    margin-top: 150px;
+}
+
+
+
+
+.form{
+    position: relative;
+}
+
+.wrapper{
+
+    position: absolute;
+    top: 1880px;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 38%;
+    /* max-width: 550px; */
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  .wrapper .title h1{
+    color: #f8ed50;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .contact-form{
+    display: flex;
+  }
+  
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  
+  .input-fields,
+  .msg{
+    width: 48%;
+  }
+  
+  .input-fields .input,
+  .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #f8ed50;
+    padding: 10px;
+    color: #f8ed50;
+    width: 100%;
+  }
+  
+  .msg textarea{
+    height: 212px;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #f8ed50;
+  }
+  ::-moz-placeholder {
+    color: #f8ed50;
+  }
+  :-ms-input-placeholder {
+    color: #f8ed50;
+  }
+  
+  .btn {
+      border:2px solid #f8ed50;
+      text-align: center;
+      padding: 10px 95px;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+  }
+  .btn:hover{
+background-color: #f8ed50;
+  }
+  /*contact us end  */
+
+.footer{
+    clear: both;
+    position: relative;
+    top: 234px;
+    background-color: black;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:992px) and (max-width: 1192px){
+  
+}
+
+
+
+
+
+@media only screen and (min-width:768px) and (max-width: 991px){
+    .home {
+        height: 45vh;
+    }
+    .home .con-h1 h1{
+        top: 200px;
+        font-size: 4.1rem;
+    }
+    .home .con-h4 h4 {
+        top: 205px;
+        font-size: 18px;
+    }
+    .who {
+        padding-top: 35px;
+    }
+    .who .con {
+        width: 60%;
+        margin-top: 40px;
+        line-height: 22px;
+        letter-spacing: 0px;
+    }
+    .who .con-img{
+        margin-top: 38.7px;
+        width: 55%;
+    }
+    .who .con-img img {
+        width: 400px;
+    }
+    .service .box .image img {
+        width: 250px;
+    }
+    .service .box .con-service {
+        width: 60%;
+    }
+    .service .box .con-service p {
+        line-height: 22px;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+        font-size: 13px;
+        font-style: italic;
+    }
+    .service .box-1 .image-1 {
+        width: 30%;
+    }
+    .service .box-1 .con-service-1 p {
+        text-align: justify;
+        line-height: 22px;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+        font-size: 13px;
+    }
+    .service .box-1 .con-service-1 {
+        width: 60%;
+    }
+    .service .box-1 .image-1 img {
+        width: 216px;
+    }
+    .service .box-1 {
+        top: 10px;
+    }
+    .service .box {
+        top: 0px;
+    }
+    .wrapper {
+        top: 1600px;
+        width: 470px;
+    }
+    .contact-img img {
+        width: 400px;
+        margin-left: -45px;
+        margin-top: 220px;
+    }
+    .btn {
+        padding: 10px 75px;
+    }
+    .input-fields .input, .msg textarea {
+        padding: 5px;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (min-width:576px) and (max-width: 767px){
+    .container {
+        max-width: 647px;
+    }
+    .home {
+        height: 35vh;
+    }
+    .home .con-h1 h1 {
+        font-size: 3rem;
+    }
+    .home .con-h4 h4 {
+        padding: 5px 18px;
+        font-size: 15px;
+    }
+    .who .con {
+        width: 60%;
+        margin-top: 20px;
+        line-height: 18px;
+        letter-spacing: 0px;
+        font-size: 13px;
+    }
+
+    .who {
+        padding-top: 35px;
+    }
+    
+    .who .con-img{
+        margin-top: 15px;
+    }
+    .who .con-img img {
+        width: 250px;
+        margin-right: -70px;
+    }
+    .service .box .image img {
+        width: 250px;
+    }
+    .service .box .con-service {
+        width: 57%;
+    }
+    .service .box .con-service p {
+        line-height: 18px;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+        font-size: 12px;
+        font-style: italic;
+    }
+    .service .box-1 .image-1 {
+        width: 30%;
+    }
+    .service .box-1 .con-service-1 p {
+        text-align: justify;
+        line-height: 18px;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+        font-size: 12px;
+    }
+    .service .box-1 .con-service-1 {
+        width: 60%;
+    }
+    .service .box-1 .image-1 img {
+        width: 216px;
+    }
+    .service .box-1 {
+        top: 10px;
+    }
+    .service .box {
+        top: 10px;
+    }
+    .wrapper {
+        top: 1372px;
+        width: 50%;
+    }
+    .wrapper .title h1 {
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+    .btn {
+        padding: 8px 50px;
+    }
+    .contact-img img {
+        width: 348px;
+        margin-left: -150px;
+        margin-top: 152px;
+    }
+    .footer {
+        font-size: 13px;
+    }
+    .input-fields .input, .msg textarea {
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width:568px){
+    .home {
+        height: 35vh;
+    }
+    .home .con-h1 h1 {
+        font-size: 2.5rem;
+    }
+    .home .con-h4 h4 {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    .who h2 {
+        font-size: 28px;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+    }
+    .who .con {
+        width: 55%;
+        margin-top: 35px;
+        line-height: 18px;
+        letter-spacing: 0px;
+        font-size: 12px;
+    }
+    .who .con-img {
+        width: 40%;
+        margin-right: 26px;
+        margin-top: 50px;
+    }
+    .who .con-img img {
+        width: 220px;
+    }
+    .service h2 {
+        font-size: 28px;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        padding-top: 25px;
+    }
+    .service .box {
+        top: 5px;
+    }
+    .service .box .image img {
+        width: 200px;
+    }
+    .service .box .con-service {
+        width: 60%;
+    }
+    .service .box .con-service p {
+        line-height: 18px;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+        font-size: 12px;
+    }
+    .service .box-1 .image-1 {
+        width: 30%;
+        margin-right: 50px;
+    }
+    .service .box-1 .image-1 img {
+        width: 200px;
+    }
+    .service .box-1 .con-service-1 {
+        width: 60%;
+        padding-bottom: 25px;
+    }
+    .service .box-1 .con-service-1 p {
+        line-height: 18px;
+        font-size: 12px;
+    }
+    .wrapper {
+        top: 1408px;
+        width: 50%;
+    }
+    .wrapper .title h1 {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .input-fields .input, .msg textarea {
+        margin: 0px 0;
+        padding: 6px;
+        font-size: 10px;
+    }
+    .input, .msg textarea {
+        height: 125px;
+    }
+    .input-fields, .msg {
+        height: 175px;
+    }
+    .btn {
+        padding: 8px 20px;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    .contact-img img {
+        width: 300px;
+        margin-left: -125px;
+    }
+    .footer {
+        font-size: 11px;
+        top: 60px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:479px){
+    .who h2 {
+        font-size: 18px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+    .who .con {
+        width: 54%;
+        margin-top: 15px;
+        line-height: 15px;
+        letter-spacing: 0px;
+        font-size: 10px;
+    }
+    .who .con-img {
+        width: 30%;
+        margin-right: 50px;
+        margin-top: 65px;
+    }
+    .who .con-img img {
+        width: 165px;
+    }
+    .service h2 {
+        font-size: 18px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+    .service .box .image img {
+        width: 125px;
+    }
+    .service .box .con-service p {
+        line-height: 12px;
+        font-size: 10px;
+    }
+    .service .box-1 .image-1 {
+        width: 24%;
+    }
+    .service .box-1 .image-1 img {
+        width: 150px;
+    }
+    .service .box-1 .con-service-1 p {
+        line-height: 12px;
+        font-size: 10px;
+    }
+    .wrapper {
+        top: 1182px;
+    }
+    .input-fields .input, .msg textarea{
+        font-size: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:340px){
+    .home {
+        height: 22vh;
+    }
+    .home .con-h1 h1 {
+        font-size: 1.5rem;
+    }
+    .home .con-h4 h4 {
+        padding: 5px 9px;
+        font-size: 8px;
+    }
+    .who {
+        padding-top: 30px;
+    }
+    .who h2 {
+        font-size: 15px;
+    }
+    .who .con {
+        width: 55%;
+        margin-top: 10px;
+        line-height: 11px;
+        letter-spacing: 0px;
+        font-size: 8px;
+    }
+    .who .con-img {
+        margin-right: 38px;
+        margin-top: 35px;
+    }
+    .who .con-img img {
+        width: 125px;
+    }
+    .service h2 {
+        font-size: 16px;
+    }
+    .service .box .image img {
+        width: 100px;
+    }
+    .service .box .con-service p {
+        line-height: 10px;
+        font-size: 8px;
+    }
+    .service .box-1 .image-1 {
+        width: 19%;
+    }
+    .service .box-1 .image-1 img {
+        width: 100px;
+    }
+    .service .box-1 .con-service-1 p {
+        line-height: 10px;
+        font-size: 8px;
+    }
+    .wrapper {
+        top: 1330px;
+        padding: 12px;
+    }
+    .footer {
+        font-size: 8px;
+        top: 15px;
+    }
+}
